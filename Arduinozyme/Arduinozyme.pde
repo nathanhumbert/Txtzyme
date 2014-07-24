@@ -57,6 +57,7 @@ void txtEval (char *buf) {
       x = digitalRead(d);
       break;
     case 'o':
+      pinMode(d, OUTPUT)
       digitalWrite(d, x%2);
       break;
     case 'm':
